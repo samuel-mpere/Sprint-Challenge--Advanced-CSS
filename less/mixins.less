@@ -13,14 +13,18 @@
     justify-content: @justify;
 }
 
-.niceButtonStyle(@btnColor, @border-radius, @btnDisplay){
+.niceButtonStyle(@btnColor, @border-radius, @btnDisplay, @btnWidth){
     color: @btnColor;
     font-size: 2rem;
+    height: 60px;
+    width: @btnWidth;
 	text-decoration: none;
 	background: @btn-bg-color;
     border-radius: @border-radius;
     display: @btnDisplay;
-    border-width: 80px 40px;
+    cursor: pointer;
+    // border-width: 80px 40px;
+
 }
 
 .inverseButtonStyle(@btnColor){

@@ -11,6 +11,17 @@
     p {
       padding:0 15px;
     }
+
+    .introImage{
+      display: flex;
+
+      img{
+        @media @phone{
+          max-width: 100%;
+        }
+
+      }
+    }
   
   }
 
@@ -58,6 +69,16 @@
       }
 
       .btn {
+        .btn {
+          .niceButtonStyle(@sea-shell, 10px, inline );
+          &:hover{
+              .inverseButtonStyle(@sea-shell)
+          }
+      
+          @media @phone{
+              .niceButtonStyle(@sea-shell, 5px, block);
+          }
+      }
       }
     }
 
